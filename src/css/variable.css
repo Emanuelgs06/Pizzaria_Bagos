@@ -1,0 +1,163 @@
+/* ===================== VARIABLE.CSS - Pizzaria Bagos ===================== */
+
+:root {
+
+    /* ===================================================== */
+    /* 🎨 BRAND - BAGOS                                      */
+    /* ===================================================== */
+  
+    /* Primary (Vermelho) */
+    --color-primary-900: #7A0C0C;
+    --color-primary-700: #B31217;
+    --color-primary-500: #E62222;
+    --color-primary-400: #FF3B3B;
+    --color-primary-100: #FFE5E5;
+  
+    /* Secondary (Amarelo / Energia) */
+    --color-secondary-700: #C98A00;
+    --color-secondary-500: #FFB800;
+    --color-secondary-300: #FFD766;
+    --color-secondary-100: #FFF4D6;
+  
+    /* Accent (Artesanal / Massa) */
+    --color-accent-700: #8B5E3C;
+    --color-accent-500: #C28B5A;
+    --color-accent-300: #E5C7A1;
+  
+    
+    /* ===================================================== */
+    /* ⚫ NEUTROS                                             */
+    /* ===================================================== */
+  
+    --color-neutral-900: #0D0D0D;
+    --color-neutral-700: #2A2A2A;
+    --color-neutral-500: #6B6B6B;
+    --color-neutral-300: #D9D9D9;
+    --color-neutral-100: #F8F8F8;
+  
+    --color-white: #FFFFFF;
+  
+  
+    /* ===================================================== */
+    /* 🚨 FEEDBACK                                           */
+    /* ===================================================== */
+  
+    --color-success: #22C55E;
+    --color-warning: #F59E0B;
+    --color-error: #EF4444;
+    --color-info: #3B82F6;
+  
+  
+    /* ===================================================== */
+    /* 🧩 TOKENS BASE                                        */
+    /* ===================================================== */
+  
+    --color-bg: var(--color-neutral-700);
+    --color-surface: var(--color-white);
+  
+    --color-text: var(--color-neutral-100);
+    --color-text-muted: var(--color-neutral-500);
+  
+    --color-border: #E5E5E5;
+  
+    --color-link: var(--color-neutral-100);
+  
+    /* ===================================================== */
+    /* 🔥 GRADIENTES                                         */
+    /* ===================================================== */
+  
+    --gradient-primary: linear-gradient(135deg, #E62222 0%, #FFB800 100%);
+    --gradient-hot: linear-gradient(180deg, #B31217 0%, #7A0C0C 100%);
+    --gradient-artisan: linear-gradient(135deg, #E5C7A1 0%, #C28B5A 100%);
+    --gradient-btn-auth: linear-gradient(65deg, #E62222 0%, #d02329 100%);
+  
+    /* ===================================================== */
+    /* 🎯 BOTÕES                                             */
+    /* ===================================================== */
+  
+    --btn-primary-bg: var(--color-primary-500);
+    --btn-primary-hover: var(--color-primary-700);
+    --btn-primary-text: var(--color-white);
+  
+    --btn-secondary-bg: var(--color-secondary-500);
+    --btn-secondary-hover: var(--color-secondary-700);
+    --btn-secondary-text: var(--color-neutral-900);
+  
+  
+    /* ===================================================== */
+    /* 🪶 SOMBRAS                                            */
+    /* ===================================================== */
+  
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.10);
+    --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.16);
+    
+  
+    /* ===================================================== */
+    /* 🔤 BORDER RADIUS                                      */
+    /* ===================================================== */
+  
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 32px;
+  
+  
+    /* ===================================================== */
+    /* ⚡ TRANSITIONS                                        */
+    /* ===================================================== */
+  
+    --transition-fast: all 0.25s ease-in-out;
+    --transition-normal: all 0.35s ease-in-out;
+    --transition-slow: all 0.6s ease-in-out;
+  
+  
+    /* ===================================================== */
+    /* 🔠 TIPOGRAFIA                                         */
+    /* ===================================================== */
+  
+    --font-primary: 'Poppins', system-ui, sans-serif;
+    --font-secondary: 'Inter', system-ui, sans-serif;
+  
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+  
+    --fs-h1: clamp(2.2rem, 6vw, 4.5rem);
+    --fs-h2: clamp(1.8rem, 5vw, 3.2rem);
+    --fs-h3: clamp(1.75rem, 4vw, 2.5rem);
+    --fs-body: clamp(1rem, 2.5vw, 1.125rem);
+    --fs-small: clamp(0.875rem, 2vw, 1rem);
+  
+    --fs-logo: clamp(1.2rem, 4vw, 1.8rem);
+    --fs-nav: clamp(0.875rem, 2vw, 1rem);
+  
+  
+    /* ===================================================== */
+    /* 📏 ESPAÇAMENTOS                                       */
+    /* ===================================================== */
+  
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+    --space-xxl: 6rem;
+  
+  
+    /* ===================================================== */
+    /* 📦 LAYOUT                                             */
+    /* ===================================================== */
+  
+    --container-max-width: 1280px;
+    --container-padding: var(--space-md);
+    --container-card: clamp(6rem, 40vw, 10rem);
+  
+    /* ===================================================== */
+    /* 🎯 INTERAÇÕES                                         */
+    /* ===================================================== */
+  
+    --hover-scale: scale(1.05);
+  
+  }

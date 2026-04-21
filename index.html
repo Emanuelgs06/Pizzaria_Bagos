@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- LINKS EXTERNOS -->
+<!-- FONTE - POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+<!-- Estilização -->
+    <link rel="stylesheet" href="src/css/variable.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+
+    <title>Pizzaria Bagos | Delivery de Pizza</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header__container">      
+            <div class="header__logo">
+                <span class="header__title">Bagos</span>
+            </div>
+
+            <nav class="nav" aria-label="Navegação principal">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="link nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#sobre" class="link nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#cardapio" class="link nav__link">Cardápio</a></li>
+                    <li class="nav__item"><a href="#depoimentos" class="link nav__link">Depoimentos</a></li>
+                </ul>
+
+                <div class="nav__social">
+                    <a href="#" aria-label="WhatsApp da Pizzaria Bagos" class="nav__social--link"><span class="icon fa-brands fa-whatsapp"></span></a>
+                    <a href="#" aria-label="Instagram da Pizzaria Bagos" class="nav__social--link"><span class="icon fa-brands fa-instagram"></span></a>
+                    <a href="#" aria-label="Facebook da Pizzaria Bagos" class="nav__social--link"><span class="icon fa-brands fa-facebook"></span></a>
+                </div>
+
+                <!-- <div class="nav__actions">
+                    <a href="#" class="link action__link">Sign in</a>
+                    <a href="#" class="link action__link">Sign up</a>
+                </div> -->
+            </nav>
+                
+            <button type="button" class="header__toggle" aria-label="Abrir menu mobile">
+                <!--nav off-->
+                <span class="fa-solid fa-bars"> </span> 
+                <!--nav on-->
+                <span class="fa-solid fa-xmark"></span> 
+
+            </button>
+        </div>
+    </header>
+
+    <main>
+<!-- HERO -->
+        <section class="hero" id="home">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Tudo começa com uma massa bem feita o resto é <span class="hero__highlight">consequência</span>
+                    </h1>
+                
+                    <p class="hero__text">
+                        Na Bagos, cada pizza é pensada do início ao fim.
+                        Sem pressa, sem atalhos - só com o que realmente importa:
+                        Sabor e experiência que só a Bagos pode proporcionar.
+                    </p>
+
+                    <div class="hero__social" aria-label="redes sociais">
+                        <a href="#"><span class="icon fa-brands fa-whatsapp"></span></a>
+                        <a href="#"><span class="icon fa-brands fa-instagram"></span></a>
+                        <a href="#"><span class="icon fa-brands fa-twitter"></span></a>
+
+                    </div>
+                    
+                     <a href="#cardapio" class="btn btn--primary">Ver cardápio</a>
+                </div>
+
+                <div class="hero__image">
+                    <figure class="hero__figure">
+                    <img src="src/images/hero_image/HERO.png" alt="Ilustração do produto">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+<!-- SOCIAL PROOF -->
+        <section class="social-proof" id="numeros">
+            
+            <h2 class="social-proof__title">Nossos Números</h2>
+            
+            <div class="container social-proof__container">
+                
+                
+                <div class="social-proof__item">
+                    <span class="social-proof__number">+12000</span>
+                    <p class="social-proof__desc"> clientes</p>
+                </div>
+                
+                <div class="social-proof__item social-proof__item--destaque">
+                    <div class="social-proof__star">
+                        <img src="src/images/social-proof/estrela.svg" alt="Avaliação 5.0">
+                    </div>
+                    <p class="social-proof__desc">Avaliação</p>
+                </div>
+                
+                <div class="social-proof__item">
+                    <span class="social-proof__number">+50</span>
+                    <p class="social-proof__desc">sabores delicíosos</p>
+                </div>
+            </div>
+        </section>
+
+<!-- ABOUT -->
+        <section class="about" id="sobre">
+            <h2 class="about__title">Sobre nós</h2>
+            <div class="container about__container"> 
+                <div class="about__image-wrapper">
+                    <figure class="about__image">
+                        <img src="src/images/about/about_image.png" alt="Imagem sobre a empresa">
+                    </figure>
+                </div>
+               
+                <div class="about__content">
+                    <div class="about__description">
+                        <h2 class="about__subtitle">Feita com alma, assada com tradição</h2>
+                        <p class="about__text">
+                            A Bagos nasceu do amor por pizza de verdade — aquela que leva tempo, respeita o processo e chega à mesa com 
+                            história. Cada detalhe é pensado: a massa fermentada lentamente, o molho feito no dia, os ingredientes escolhidos
+                            um a um. Não somos fast food. Somos uma pizzaria que acredita que comida boa não tem atalho.
+                        </p>
+                    
+                        <div class="about__social">
+                            <a class="link about__social-link" href="#"><span class="fa-brands fa-instagram"></span></a>
+                            <a class="link about__social-link" href="#"><span class="fa-brands fa-whatsapp"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+<!-- SERVICES / CARDÁPIO -->
+        <section id="cardapio" class="services">
+            <div class="container services__container">
+                <h2 class="services__title">Mais Vendidos</h2>
+                
+                <!-- Grid de Produtos -->
+                <div class="services__grid">
+                    <!-- Produto -->
+                    <article class="services__item services__item--product">
+                        <figure class="services__image">
+                            <img src="src/images/services/prod__Marguerita.png" alt="Prod 1">
+                        </figure>
+                        <h3 class="services__name">Pizza Margherita</h3>
+                        <p class="services__desc">Molho de tomate artesanal, mussarela derretida e folhas frescas de manjericão, finalizada com azeite especial.</p>
+                        <span class="services__price">R$ 39,90</span>
+                    </article>
+
+                    <!-- Produto - DESTAQUE -->
+                    <article class="services__item services__item--hot">
+                        <figure class="services__image">
+                            <img src="src/images/2.jpg" alt="Prod 2">
+                        </figure>
+                        <h3 class="services__name">Pizza Pepperoni</h3>
+                        <p class="services__desc">Camada generosa de mussarela com fatias de pepperoni levemente picantes, assadas até ficarem crocantes e suculentas.</p>
+                        <span class="services__price">R$ 59,90</span>
+                    </article>
+
+                    <!-- Produto -->
+                    <article class="services__item services__item--product">
+                        <figure class="services__image">
+                            <img src="src/images/2.jpg" alt="Prod 3">
+                        </figure>
+                        <h3 class="services__name">Pizza 4 Queijos</h3>
+                        <p class="services__desc">Combinação cremosa de mussarela, parmesão, gorgonzola e provolone, criando um sabor intenso e irresistível.</p>
+                        <span class="services__price">R$ 49,90</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+<!-- TESTIMONIAL -->
+       <section id="depoimentos" class="testimonials">
+            <div class="container testimonials__container">
+                <h2 class="testimonials__title"> O que nossos clientes dizem</h2>
+                
+                <!-- Depoimento 1 -->
+                <article class="testimonials__item">
+                    <div class="testimonials__profile">
+                        <div class="testimonials__photo">
+                            <img src="src/images/2.jpg" alt="Foto do cliente">
+                        </div>
+
+                        <div class="testimonials__info">
+                            <h3 class="testimonials__name">João Silva</h3>
+                            <span class="testimonials__role">Cliente</span>
+                        </div>
+                    </div>
+
+                    <p class="testimonials__description">
+                        "Melhor pizza que já comi! Chegou rápido e muito saborosa e o local é muito agradável excelente atendimento ."
+                    </p>
+                </article>
+
+                <!-- Depoimento 2 -->
+                <article class="testimonials__item">
+                    <div class="testimonials__profile">
+                        <div class="testimonials__photo">
+                            <img src="src/images/2.jpg" alt="Foto do cliente">
+                        </div>
+
+                        <div class="testimonials__info">
+                            <h3 class="testimonials__name">Carlos Avila</h3>
+                            <span class="testimonials__role">Cliente</span>
+                        </div>
+                    </div>
+
+                    <p class="testimonials__description">
+                        "Melhor pizza que já comi! Chegou rápido e muito saborosa."
+                    </p>
+                </article>
+
+                <!-- Depoimento 3 -->
+                <article class="testimonials__item">
+                    <div class="testimonials__profile">
+                        <div class="testimonials__photo">
+                            <img src="src/images/2.jpg" alt="Foto do cliente">
+                        </div>
+
+                        <div class="testimonials__info">
+                            <h3 class="testimonials__name">Paulo Kich</h3>
+                            <span class="testimonials__role">Cliente</span>
+                        </div>
+                    </div>
+
+                    <p class="testimonials__description">
+                        "Melhor pizza que já comi! Chegou rápido e muito saborosa."
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+<!-- CTA -->
+        <section class="cta">
+            <div class="container cta__container">
+                <h2 class="cta__title">A melhor pizza da cidade está te esperando 🍕</h2>
+                <p class="cta__desc">Peça agora e receba em até 30 minutos na sua casa em Brasília-DF.</p>
+                <div class="link__cta">
+                    <a href="#" class="btn btn--cta">
+                        <span class="cta__icon fa-brands fa-whatsapp"></span> Pedir Agora pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>&copy; 2026 Pizzaria Bagos. Todos os direitos reservados.</p>
+        
+            <div class="footer__policy">
+                <a href="#" class="link footer__link">Política de Privacidade</a>
+                <a href="#" class="link footer__link">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="src/script/script.js"></script>
+</body>
+</html>
