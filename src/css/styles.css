@@ -59,10 +59,12 @@ html {
 /* ================= HEADER ================= */
 .header {
 /* Fixa o header no topo da Página */
-    position:sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 100;
-
+    
     background-color: var(--color-bg-alt);
     box-shadow: var(--shadow-md)
 }
