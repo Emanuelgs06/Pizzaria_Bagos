@@ -61,7 +61,7 @@
     --color-text-muted: var(--color-text);
     --color-text-sub: var(--color-neutral-200);
 
-    --color-social: var(--color-neutral-300);
+    --color-links: var(--color-primary-300);
     --color-text: var(--color-neutral-100);
     --color-card: var(--color-primary-900);
 

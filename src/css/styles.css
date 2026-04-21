@@ -28,10 +28,14 @@ html {
 
 /* ================= UTILITÁRIOS ================= */
 .link {
-    border-radius: var(--radius-md);
     text-decoration: none;
     color: var(--color-social);
     font-weight: var(--fw-bold);
+    color: var(--color-links);
+    transition: var(--transition-normal);
+}
+.link:hover {
+    transform: var(--hover-scale);
 }
 
 .icon {
@@ -59,9 +63,8 @@ html {
 /* ================= HEADER ================= */
 .header {
 /* Fixa o header no topo da Página */
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 100;
     
@@ -255,7 +258,7 @@ html {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    padding: var(--space-lg) 0;
+    padding: var(--space-lg);
     border-top: 1px solid rgba(255,255,255,0.15);
 }
 
@@ -304,7 +307,9 @@ html {
     font-weight: var(--fw-bold);
     line-height: 0.1;
 }
-
+.social-proof__star {
+    padding: var(--space-md);
+}
 .social-proof__star img {
     width: clamp(70px,10vw, 150px);
 }
