@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/intens.css">
+    <link rel="stylesheet" href="CSS/carrinho.css">
+    <link rel="icon" href="Imagens/Favicon.png" type="image/x-icon">
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+    <header>
+        <button class="voltar" type="button">← Voltar</button>
+        <h2>Carrinho de Compras</h2>
+        <div class="carrinho-info">
+            <span id="totalItems">0</span> itens
+        </div>
+    </header>
+
+    <main class="carrinho-container">
+        <section class="cart-items">
+            <div id="cartContent"></div>
+        </section>
+
+        <aside class="cart-summary">
+            <h3>Resumo</h3>
+            <div class="summary-item">
+                <span>Subtotal:</span>
+                <span id="subtotal">R$ 0,00</span>
+            </div>
+            <div class="summary-item">
+                <span>Frete:</span>
+                <span id="frete">Grátis</span>
+            </div>
+            <div class="summary-item total">
+                <span>Total:</span>
+                <span id="total">R$ 0,00</span>
+            </div>
+            <button class="checkout-btn" type="button">Finalizar Compra</button>
+            <button class="clear-cart-btn" type="button">Limpar Carrinho</button>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <small>© 2026 Americanos - Projeto</small>
+    </footer>
+
+    <script src="JSS/carrinho.js"></script>
+</body>
+</html>
