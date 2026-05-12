@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     
 <!-- Estilização -->
-    <link rel="stylesheet" href="src/css/variable.css">
     <link rel="stylesheet" href="src/css/styles.css">
 
     <title>Pizzaria Bagos | Delivery de Pizza</title>
@@ -26,27 +25,28 @@
     <header class="header">
         <div class="container header__container">      
             <div class="header__logo">
-                <span class="header__title">Bagos</span>
+                <a href="#home"><span class="header__title">Bagos</span></a>
             </div>
 
             <nav class="nav" aria-label="Navegação principal">
                 <ul class="nav__list">
-                    <li class="link nav__item"><a href="#home" class="link nav__link">Home</a></li>
-                    <li class="link nav__item"><a href="#sobre" class="link nav__link">Sobre</a></li>
-                    <li class="link nav__item"><a href="#cardapio" class="link nav__link">Cardápio</a></li>
-                    <li class="link nav__item"><a href="#depoimentos" class="link nav__link">Depoimentos</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link" aria-label="Inicio">Home</a></li>
+                    <li class="nav__item"><a href="#sobre" class="nav__link" aria-label="Sobre">Sobre</a></li>
+                    <li class="nav__item"><a href="#cardapio" class="nav__link" aria-label="Cardápio">Cardápio</a></li>
+                    <li class="nav__item"><a href="#depoimentos" class="nav__link" aria-label="Depoimentos">Depoimentos</a></li>
                 </ul>
 
                 <div class="nav__social">
-                    <a href="#" aria-label="WhatsApp da Pizzaria Bagos" class="link nav__social--link"><span class="icon fa-brands fa-whatsapp"></span></a>
-                    <a href="#" aria-label="Instagram da Pizzaria Bagos" class="link nav__social--link"><span class="icon fa-brands fa-instagram"></span></a>
-                    <a href="#" aria-label="Facebook da Pizzaria Bagos" class="link nav__social--link"><span class="icon fa-brands fa-facebook"></span></a>
+                    <a href="#" aria-label="WhatsApp da Pizzaria Bagos" class="nav__social--link"><span class="icon fa-brands fa-whatsapp"></span></a>
+                    <a href="#" aria-label="Instagram da Pizzaria Bagos" class="nav__social--link"><span class="icon fa-brands fa-instagram"></span></a>
+                    <a href="#" aria-label="Facebook da Pizzaria Bagos" class="nav__social--link"><span class="icon fa-brands fa-facebook"></span></a>
                 </div>
 
                 <!-- <div class="nav__actions">
                     <a href="#" class="link action__link">Sign in</a>
                     <a href="#" class="link action__link">Sign up</a>
                 </div> -->
+
             </nav>
                 
             <button type="button" class="header__toggle" aria-label="Abrir menu mobile">
@@ -54,8 +54,8 @@
                 <span class="fa-solid fa-bars"> </span> 
                 <!--nav on-->
                 <span class="fa-solid fa-xmark"></span> 
-
             </button>
+
         </div>
     </header>
 
@@ -75,9 +75,9 @@
                     </p>
 
                     <div class="hero__social" aria-label="redes sociais">
-                        <a href="#" class="link hero__social--link"><span class="icon fa-brands fa-whatsapp"></span></a>
-                        <a href="#" class="link hero__social--link""><span class="icon fa-brands fa-instagram"></span></a>
-                        <a href="#" class="link hero__social--link"><span class="icon fa-brands fa-twitter"></span></a>
+                        <a href="#" class="hero__social--link"><span class="icon fa-brands fa-whatsapp"></span></a>
+                        <a href="#" class="hero__social--link""><span class="icon fa-brands fa-instagram"></span></a>
+                        <a href="#" class="hero__social--link"><span class="icon fa-brands fa-twitter"></span></a>
 
                     </div>
                     
@@ -139,8 +139,8 @@
                         </p>
                     
                         <div class="about__social">
-                            <a class="link about__social-link" href="#"><span class="fa-brands fa-instagram"></span></a>
-                            <a class="link about__social-link" href="#"><span class="fa-brands fa-whatsapp"></span></a>
+                            <a class="about__social-link" href="#"><span class="icon fa-brands fa-instagram"></span></a>
+                            <a class="about__social-link" href="#"><span class="icon fa-brands fa-whatsapp"></span></a>
                         </div>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                     <!-- Produto - DESTAQUE -->
                     <article class="services__item services__item--hot">
                         <figure class="services__image">
-                            <img src="src/images/2.jpg" alt="Prod 2">
+                            <img src="src/images/services/prod_Pepperoni.png" alt="Prod 2">
                         </figure>
                         <h3 class="services__name">Pizza Pepperoni</h3>
                         <p class="services__desc">Camada generosa de mussarela com fatias de pepperoni levemente picantes, assadas até ficarem crocantes e suculentas.</p>
@@ -177,7 +177,7 @@
                     <!-- Produto -->
                     <article class="services__item services__item--product">
                         <figure class="services__image">
-                            <img src="src/images/2.jpg" alt="Prod 3">
+                            <img src="src/images/services/prod_4Queijos.png" alt="Prod 3">
                         </figure>
                         <h3 class="services__name">Pizza 4 Queijos</h3>
                         <p class="services__desc">Combinação cremosa de mussarela, parmesão, gorgonzola e provolone, criando um sabor intenso e irresistível.</p>
@@ -188,25 +188,25 @@
         </section>
         
 <!-- TESTIMONIAL -->
-       <section id="depoimentos" class="testimonials">
+        <section id="depoimentos" class="testimonials">
+            <h2 class="testimonials__title"> O que nossos clientes dizem</h2>
             <div class="container testimonials__container">
-                <h2 class="testimonials__title"> O que nossos clientes dizem</h2>
                 
                 <!-- Depoimento 1 -->
                 <article class="testimonials__item">
                     <div class="testimonials__profile">
                         <div class="testimonials__photo">
-                            <img src="src/images/2.jpg" alt="Foto do cliente">
+                            <img src="src/images/Testimonials/photo/Photo-1.png" alt="Foto do cliente">
                         </div>
 
                         <div class="testimonials__info">
-                            <h3 class="testimonials__name">João Silva</h3>
+                            <h3 class="testimonials__name">Joana Silva</h3>
                             <span class="testimonials__role">Cliente</span>
                         </div>
                     </div>
 
                     <p class="testimonials__description">
-                        "Melhor pizza que já comi! Chegou rápido e muito saborosa e o local é muito agradável excelente atendimento ."
+                        "A de 4 queijos é surreal, dá vontade de pedir toda semana."
                     </p>
                 </article>
 
@@ -214,17 +214,17 @@
                 <article class="testimonials__item">
                     <div class="testimonials__profile">
                         <div class="testimonials__photo">
-                            <img src="src/images/2.jpg" alt="Foto do cliente">
+                            <img src="src/images/Testimonials/photo/Photo-2.png" alt="Foto do cliente">
                         </div>
 
                         <div class="testimonials__info">
-                            <h3 class="testimonials__name">Carlos Avila</h3>
+                            <h3 class="testimonials__name">Rebeca Avila</h3>
                             <span class="testimonials__role">Cliente</span>
                         </div>
                     </div>
 
                     <p class="testimonials__description">
-                        "Melhor pizza que já comi! Chegou rápido e muito saborosa."
+                        "Fui de primeira pela indicação de um amigo e não me arrependi. A Pepperoni é simplesmente perfeita — crocante na borda, recheio generoso. Já indiquei pra família toda."
                     </p>
                 </article>
 
@@ -232,7 +232,7 @@
                 <article class="testimonials__item">
                     <div class="testimonials__profile">
                         <div class="testimonials__photo">
-                            <img src="src/images/2.jpg" alt="Foto do cliente">
+                            <img src="src/images/Testimonials/photo/Photo-3.png" alt="Foto do cliente">
                         </div>
 
                         <div class="testimonials__info">
@@ -252,12 +252,20 @@
 <!-- CTA -->
         <section class="cta">
             <div class="container cta__container">
+
                 <h2 class="cta__title">A melhor pizza da cidade está te esperando 🍕</h2>
                 <p class="cta__desc">Peça agora e receba em até 30 minutos na sua casa em Brasília-DF.</p>
+
                 <div class="link__cta">
-                    <a href="#" class="btn btn--cta">
-                        <span class="cta__icon fa-brands fa-whatsapp"></span> Pedir Agora pelo WhatsApp
+                    <a href="#" class="btn__cta">
+                        <span class="cta__icon fa-brands fa-whatsapp"></span>
+                        <span class="btn__text">Peça pelo WhatsApp</span>
                     </a>
+                </div>
+                <div class="cta__trust">
+                    <span>✓ Sem taxa de entrega</span>
+                    <span>✓ Pagamento na entrega</span>
+                    <span>✓ 30 min ou é grátis</span>
                 </div>
             </div>
         </section>
@@ -265,14 +273,29 @@
 
 <!-- FOOTER -->
     <footer class="footer">
+        <h2>Bagos</h2>
         <div class="container footer__container">
-            <p>&copy; 2026 Pizzaria Bagos. Todos os direitos reservados.</p>
         
-            <div class="footer__policy">
-                <a href="#" class="link footer__link">Política de Privacidade</a>
-                <a href="#" class="link footer__link">Termos de Uso</a>
+            <div class="footer__social">
+                <h3 class="footer__heading">Redes Sociais</h3>
+                <div class="footer__social--icons">
+                    <a href="/" class="footer__social--link"><span class="icon fa-brands fa-facebook"></span></a>
+                    <a href="/" class="footer__social--link"><span class="icon fa-brands fa-instagram"></span></a>
+                    <a href="/" class="footer__social--link"><span class="icon fa-brands fa-twitter"></span></a>
+                    <a href="/" class="footer__social--link"><span class="icon fa-brands fa-tiktok"></span></a>
+                    <a href="/" class="footer__social--link"><span class="icon fa-brands fa-youtube"></span></a>
+                </div>
             </div>
+                       
+            <div class="footer__policy">
+                <h3 class="footer__heading">Termos</h3>
+                <a href="/" class="footer__link">Política de Privacidade</a>
+                <a href="/" class="footer__link">Termos de Uso</a>
+            </div>
+
         </div>
+        <p>&copy; 2026 Pizzaria Bagos. Todos os direitos reservados.</p>
+
     </footer>
     
     

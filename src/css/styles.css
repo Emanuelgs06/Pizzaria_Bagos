@@ -27,37 +27,29 @@ html {
 }
 
 /* ================= UTILITÁRIOS ================= */
-.link {
+a {
     text-decoration: none;
-    color: var(--color-social);
-    font-weight: var(--fw-bold);
-    color: var(--color-links);
-    transition: var(--transition-normal);
-}
-.link:hover {
-    transform: var(--hover-scale);
+    color: var(--color-text);
 }
 
 .icon {
-    text-decoration: none;
     color: var(--color-social);
 }
-
 /* ================= BOTÕES ================= */
 .btn {
     width: fit-content;
-    border: none;
     border-radius: var(--radius-md);
     padding: var(--space-sm);
     font-size: var(--fs-small);
     font-weight: var(--fw-semibold);
-    color: red;
-    transition: all 0.5s;
+    transition: var(--transition-slow);
     text-decoration: none;
 }
 
 .btn:hover {
-    transform: var(--hover-scale);
+    transform: var(--hover-scale-md);
+    background: var(--color-text-muted);
+
 }
 
 /* ================= HEADER ================= */
@@ -129,6 +121,11 @@ html {
     font-weight: var(--fw-semibold);
     color: var(--color-text);
     list-style: none;
+    transition: var(--transition-normal);
+}
+
+.nav__item:hover {
+    transform: var(--hover-scale-sm);
 }
 
 /* Redes sociais do header */
@@ -140,6 +137,11 @@ html {
 
 .nav__social--link {
     color: var(--color-link);
+    transition: var(--transition-normal);
+}
+
+.nav__social--link:hover {
+    transform: var(--hover-scale-md);
 }
 
 /* Ações (login, etc.) */
@@ -183,8 +185,7 @@ html {
 /* ================= HERO ================= */
 .hero {
     background: var(--gradient-hero);
-    scroll-margin-top: 40px;
-    
+    scroll-margin-top: 95px;
 }
 
 /* Container do hero */
@@ -199,20 +200,21 @@ html {
 .hero__content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 500px;
+    gap: var(--space-sm);
+    max-width: 600px;
     text-align: left;
 }
 
 /* Título */
 .hero__title {
     font-size: var(--fs-h1);
-    line-height: 1.2;
+    line-height: 1;
     color: var(--color-text);
 }
 
 /* Highlight */
 .hero__highlight {
+    display: inline-block;
     color: var(--color-text-muted);
 }
 
@@ -239,7 +241,6 @@ html {
 
 /* Imagem */
 .hero__figure {
-    
     margin: 0 auto;
 }
 
@@ -289,9 +290,7 @@ html {
 }
 .social-proof__item--destaque {
     padding: var(--space-md);
-    position: relative;
-    bottom: var(--space-lg);
-    scale: 1.2;
+    scale: 1.3;
 }
 
 .social-proof__number {
@@ -308,10 +307,10 @@ html {
     font-weight: var(--fw-bold);
 }
 .social-proof__star {
-    padding: var(--space-md);
+    padding: var(--space-sm);
 }
 .social-proof__star img {
-    width: clamp(70px,10vw, 150px);
+    width: clamp(70px,7vw, 150px);
 }
 /* ================= ABOUT ================= */
 .about {
@@ -327,6 +326,10 @@ html {
     padding: var(--space-lg);
 }
 
+.about__text {
+    color: var(--color-text-muted);
+}
+
 .about__container {
     display: flex;
     flex-direction: column;
@@ -335,7 +338,7 @@ html {
 
 /* Imagem */
 
-                                                   
+
 .about__image img {
     width: 90%;
     border-radius: 50% 25% 60%;
@@ -358,6 +361,7 @@ html {
 .services {
     background: var(--gradient-section-alt);
     scroll-margin-top: 45px;
+    min-height: 100svh;
 }
 
 .services__container {
@@ -370,24 +374,19 @@ html {
 
 /* Título */
 .services__title {
-    font-size: var(--fs-h1);
+    font-size: var(--fs-h2);
     color: var(--color-text-sect);
 }
 
 /* Grid de produtos */
 .services__grid {
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--space-md);
+    gap: var(--space-xl);
     justify-items: center;
 }
 
 /* Card */
-.services__item:hover {
-    transform: var(--hover-scale-sm) var(--translate-lg);
-}
-
 .services__item {
     width: 100%;
     max-width: 350px;
@@ -397,7 +396,6 @@ html {
     background: var(--color-card);
     border-radius: var(--radius-md);
     padding: var(--space-sm);
-    transition: var(--transition-slow);
 }
 
 /* Nome */
@@ -428,11 +426,12 @@ html {
 
 /* Variações */
 .services__item--product {
-    border: 4px solid green;
+    outline: 4px double var(--color-text-muted);
 }
 
 .services__item--hot {
-    scale: 1.04;
+    outline: 6px double var(--color-white);
+    scale: 1.1;
 }
 
 /* ================= TESTIMONIALS ================= */
@@ -455,6 +454,7 @@ html {
     display: flex;
     justify-content: center;
     color: var(--color-text);
+    font-size: var(--fs-h2);
 
     padding: var(--space-md);
 }
@@ -488,7 +488,6 @@ html {
 /* Foto */
 .testimonials__photo img {
     width: 80px;
-    border-radius: 50% 20% 20%;
 }
 
 /* Info */
@@ -508,7 +507,7 @@ html {
 .testimonials__description {
     width: 250px;
     color: black;
-    font-size: var(--fs-h4);
+    font-size: var(--fs-body);
     padding: var(--space-sm);
 
 }
@@ -516,7 +515,13 @@ html {
 /* ================= CTA ================= */
 .cta {
     background-color: var(--color-bg-alt);
-    scroll-margin-top: 45px;
+    background-image: url(../images/cta/background_cta2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); /* sobreposição escura */
+
+    border-bottom: 4px solid var(--color-bg-alt);
 }
 
 .cta__container {
@@ -524,18 +529,17 @@ html {
     flex-direction: column;
     justify-content: center;
     gap: var(--space-md);
-
 }
 
 /* Título */
 .cta__title {
     font-size: var(--fs-h3);
-    color: red;
+    color: var(--color-text);
 }
 
 /* Texto */
 .cta__desc {
-    color: burlywood;
+    color:var(--color-text-sect);
     font-weight: bold;
 }
 
@@ -543,16 +547,22 @@ html {
 .link__cta {
     width: 50%;
     margin: 0 auto;
-    display: flex;
     font-size: var(--fs-small);
     background-color: #1bcc5c;
     border-radius: var(--radius-xl);
     transition: all 0.5s;
-    
+
+    padding: var(--space-sm);
 }
 
 .link__cta:hover {
-    transform: var(--hover-scale);
+    transform: var(--hover-scale-md);
+}
+
+.btn__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Ícone */
@@ -560,30 +570,57 @@ html {
     font-size: var(--fs-h3);
 }
 
-/* Conteúdo do botão */
-.link--cta {
-    display: inline-flex;
+.cta__trust{
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    gap: var(--space-md);  
+}
+
+/* ================ FOOTER ============== */
+.footer {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg);
+}
+
+.footer h2 {
+    font-size: var(--fs-h3);
+}
+
+.footer__heading {
+    text-align: center;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    justify-content: space-between;
+}
+
+.footer__link {
+    color: var(--color-text);
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: column;
     gap: var(--space-sm);
 }
 
-.footer {
-    background-color: var(--color-bg);
-}
-.footer__container {
+.footer__social--icons {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    font-size: var(--fs-small);
+    gap: var(--space-sm);
 }
 
 .footer__policy {
     display: flex;
+    flex-direction: column;
     gap: var(--space-xs);
 }
-
-
 
 /* ========================================= */
 /* DESKTOP */
@@ -591,8 +628,8 @@ html {
 @media (min-width: 768px) {
     /* Variaveis Globais */
     .container {
-    max-width: none;
-    padding: var(--space-md);
+        max-width: none;
+        padding: var(--space-md);
     }
 
     /* HEADER */
@@ -611,6 +648,7 @@ html {
     .header__toggle {
         display: none;
     }
+
     .nav__list {
         display: flex;
         gap: 20px;
@@ -618,21 +656,34 @@ html {
     }
 
     /* HERO */
-    .hero__container{
+    .hero {
         min-height: 100dvh;
+    }
+
+    .hero__container{
         flex-direction: row;
         width: 100%;
+        padding: var(--space-lg);
     }
     
     .btn--primary {
-        width: fit-content;
+        margin-top: var(--space-lg);
         align-self: center;
     }
 
+    .hero__social--link {
+        transition: var(--transition-fast);
+    }
+    .hero__social--link:hover {
+        transform: var(--hover-scale-lg);
+    }
+
+    /* Social proof */
     .social-proof__container {
-        min-height: 30dvh;
         justify-content: space-between;
     }
+
+
 
     /* ABOUT */
     .about__title {
@@ -677,31 +728,101 @@ html {
         gap: var(--space-lg);
         justify-content: end;
     }
+
+    .about__social-link {
+        transition: var(--transition-fast);
+    }
+    .about__social-link:hover {
+        transform: var(--hover-scale-md);
+    }
+
+    /* SERVICES / CARDÁPIO */
+    .services {
+        min-height: 100svh;
+    }
     .services__container {
         padding: 40px;
+        gap: var(--space-md);
+    }
+    .services__title {
+        padding: var(--space-sm);
     }
     .services__grid {
         grid-template-columns: repeat(3, 1fr);
     }
+    
+    .services__item {
+        transition: var(--transition-normal);
+    }
+    
+    .services__item:hover {
+        transform: var(--hover-scale-sm) var(--translate-lg);
+    }
 
+    .services__item--hot:hover {
+        transform: var(--hover-scale-sm) var(--translate-lg);
+    }
+    
+    .services__image img {
+        width: 70%;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials__container {
+        flex-direction: row;
+    }
+
+    .testimonials__item {
+        width: 33%;
+    }
+
+    /* CTA */
+    .cta {
+        min-height: 400px;
+    }
 
 }
-
+/* =============================================== */
+/* =================== TABLET =====================*/
+/* =============================================== */
 @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* HERO */
+    .hero {
+        min-height: auto;
+    }
+
     .hero__container {
         flex-direction: column;
     }
     
+    .hero__content {
+        min-width: 90%;
+    }
+
     .hero__figure img {
-        width: 100%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
         margin: 0 auto;
     }
 
+    /* ABOUT */
     .about__container {
         flex-direction: column;
-
     }
 
+    .about__description {
+        gap: var(--space-lg);
+    }
+    
+    .about__subtitle {
+        font-size: var(--fs-h2);
+    }
+
+    .about__text {
+        font-size: var(--fs-h4);
+    }
     .about__image img {
         width: 100%;
     }
@@ -709,5 +830,27 @@ html {
     .about__social {
         display: none;
     }
+
+/* SERVICES / CARDÁPIO */
+    .services__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services__item {
+        max-width: 500px;
+    }
     
+    .services__image img {
+        width: 50%;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials__container {
+        flex-direction: column;
+    }
+
+    .testimonials__item {
+        width: 500px;
+    }
+
 }
